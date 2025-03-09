@@ -1,4 +1,4 @@
-import './App.css'
+
 import { useState } from 'react'
 import recipes from './recipe.json'
 
@@ -30,7 +30,7 @@ function App() {
   }
 
   return (
-    <>
+    <div className='flex flex-col justify-center items-center'>
       <h1>Taco Recipe Generator</h1>
       <form>
         <button onClick={(event) => handleClick(event)}>Chicken</button>
@@ -52,7 +52,7 @@ function App() {
           </>
         )}
       </div>
-    </>
+    </div>
   )
 }
 
